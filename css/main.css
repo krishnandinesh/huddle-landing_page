@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    background-image: url(../images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans';
+    height: 100vh;
+    overflow-y: hidden;
+    line-height: 1.5;
+}
+
+h2{
+    font-family: 'Poppins';
+    font-size: 35px;
+}
+
+.logo{
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    margin: 40px 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 70px 70px 0 50px;
+}
+
+.header{
+    width: 50%;
+    height: 435px;
+    background-image: url(../images/illustration-mockups.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 50px;
+}
+
+p{
+    margin: 20px 0;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    border: none;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.border{
+    color: white;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.border:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 375px){
+
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .logo{
+        height: 30px;
+        margin: 30px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .header{
+        width: 90%;
+        height: 210px;
+        margin-right:0%;
+        background-position: center;
+    }
+
+    .content{
+        width: 80%;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    button{
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 12px;
+    }
+
+    .social{
+        margin: 40px 0 0 0;
+        justify-content: center;
+    }
+
+    .border{
+        margin: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+}
